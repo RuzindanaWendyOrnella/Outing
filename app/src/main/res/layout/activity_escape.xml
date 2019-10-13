@@ -115,6 +115,14 @@
         android:padding="5dp"
         android:textAlignment="textEnd" />
 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/club1" />
     <Button
 
         android:id="@+id/eventButton"
