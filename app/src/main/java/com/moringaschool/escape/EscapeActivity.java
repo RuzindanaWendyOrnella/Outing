@@ -3,6 +3,8 @@ package com.moringaschool.escape;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,13 +12,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class EscapeActivity extends AppCompatActivity {
-    private TextView mEventButton;
+    private Button mEventButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_escape);
-      /*  mEventButton = (TextView) findViewById(R.id.eventButton);*/
+        mEventButton = (Button) findViewById(R.id.eventButton);
+        mEventButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(EscapeActivity.this,EventActivity.class);
+                startActivity(intent1);
+            }
+        });
     }
 }
 
