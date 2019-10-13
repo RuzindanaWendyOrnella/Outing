@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
-
-
-    <!--<EditText
-        android:id="@+id/locationNameText"
-        android:layout_width="152dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="631dp"
-        android:background="@color/colorGreen"
-        android:hint="Enter Zip Code"
-        android:padding="5dp"
-        android:textAlignment="textEnd"
-        android:textColorHint="@color/colorPrimary" />-->
-
     <TextView
         android:id="@+id/nameOfEvent"
         android:layout_width="match_parent"
@@ -130,34 +116,4 @@
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         android:typeface="serif" />
-    <!--
-
-
-
-
-
-
-
-      <TextView
-          android:id="@+id/TimeOfEvent"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_alignParentTop="true"
-          android:layout_marginTop="565dp"
-          android:text="Time"
-          android:textColor="@color/colorPrimary"
-          android:textSize="40sp"
-          android:textStyle="bold" />
-
-      <EditText
-          android:id="@+id/locationTimeText"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-          android:layout_marginBottom="72dp"
-          android:background="@color/colorAccent"
-          android:hint="Enter Zip Code"
-          android:padding="5dp"
-          android:textAlignment="textEnd" />
-  -->
 </RelativeLayout>

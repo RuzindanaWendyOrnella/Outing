@@ -20,13 +20,10 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:background="@color/colorPrimary"/>
-
-
     <TextView
         android:id="@+id/locationNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_below="@id/locationTextView"
         android:layout_marginTop="78dp"
         android:text="Result: "
@@ -34,7 +31,6 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:background="@color/colorPrimary"/>
-
     <TextView
         android:id="@+id/locationTypeText"
         android:layout_width="wrap_content"
@@ -46,9 +42,6 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:background="@color/colorPrimary"/>
-
-
-
     <TextView
         android:id="@+id/locationDescriptionText"
         android:layout_width="wrap_content"
@@ -60,9 +53,6 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:background="@color/colorPrimary"/>
-
-
-
     <TextView
         android:id="@+id/locationDressCodeText"
         android:layout_width="wrap_content"
@@ -74,8 +64,6 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:background="@color/colorPrimary"/>
-
-
 
     <TextView
         android:id="@+id/locationTimeText"

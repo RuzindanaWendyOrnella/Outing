@@ -33,10 +33,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-   /* (MainActivity.this, EscapeActivity.class);
-}*/
- /*mLocationNameText = (EditText) findViewById(R.id.locationNameText);
-        mLocationTypeText = (EditText) findViewById(R.id.locationTypeText);
-        mLocationDescriptionText = (EditText) findViewById(R.id.locationDescriptionText);
-        mLocationDressCodeText = (EditText) findViewById(R.id.locationDressCodeText);
-        mLocationTimeText = (EditText) findViewById(R.id.locationTimeText);*/
