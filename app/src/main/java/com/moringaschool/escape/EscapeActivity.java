@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,8 +28,11 @@ public class EscapeActivity extends AppCompatActivity {
                 Intent intent1=new Intent(EscapeActivity.this,EventActivity.class);
                 startActivity(intent1);
             }
+
         });
+
     }
+
 }
 
 
