@@ -10,21 +10,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.jar.Attributes;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 public class SavedActivity extends AppCompatActivity {
-    private TextView mlocationNameText;
-    private TextView mlocationTypeText;
-    private TextView mlocationDescriptionText;
-    private TextView mlocationDresscodeText;
-    private TextView mlocationTimeText;
+    @BindView (R.id.locationNameText) TextView mlocationNameText;
+    @BindView (R.id.locationTypeText) TextView mlocationTypeText;
+    @BindView (R.id.locationDescriptionText) TextView mlocationDescriptionText;
+    @BindView (R.id.locationDressCodeText) TextView mlocationDresscodeText;
+    @BindView (R.id.locationTimeText) TextView mlocationTimeText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved);
-        mlocationNameText = (TextView) findViewById(R.id.locationNameText);
-        mlocationTypeText=(TextView) findViewById(R.id.locationTypeText);
-        mlocationDescriptionText=(TextView) findViewById(R.id.locationDescriptionText);
-        mlocationDresscodeText=(TextView) findViewById(R.id.locationDressCodeText);
-        mlocationTimeText=(TextView) findViewById(R.id.locationTimeText);
+        ButterKnife.bind(this);
         Intent intent2 = getIntent();
         String Name = intent2.getStringExtra("Name");
         System.out.println(Name);
