@@ -1,5 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+           android:id="@+id/nameOfEvent"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="3dp"
+           android:text="Name"
+           android:textColor="@color/colorPrimary"
+           android:textSize="40sp"
+           android:textStyle="bold" />
 
+       <EditText
+           android:id="@+id/locationNameText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="631dp"
+           android:background="@color/colorAccent"
+           android:hint="Enter Zip Code"
+           android:padding="5dp"
+           android:textAlignment="textEnd" />
+
+    <!--  <TextView
+          android:id="@+id/typeOfEvent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="120dp"
+          android:text="Type"
+          android:textColor="@color/colorPrimary"
+          android:textSize="40sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/locationTypeText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="511dp"
+          android:background="@color/colorAccent"
+          android:hint="Enter Zip Code"
+          android:padding="5dp"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/descriptionOfEvent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="240dp"
+          android:text="Description"
+          android:textColor="@color/colorPrimary"
+          android:textSize="40sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/locationDescriptionText"
+          android:layout_width="149dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="377dp"
+          android:background="@color/colorAccent"
+          android:hint="Enter Zip Code"
+          android:padding="5dp"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/DressCodeOfEvent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="400dp"
+          android:text="DressCode"
+          android:textColor="@color/colorPrimary"
+          android:textSize="40sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/locationDressCodeText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="200dp"
+          android:background="@color/colorAccent"
+          android:hint="Enter Zip Code"
+          android:padding="5dp"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/TimeOfEvent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="565dp"
+          android:text="Time"
+          android:textColor="@color/colorPrimary"
+          android:textSize="40sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/locationTimeText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="72dp"
+          android:background="@color/colorAccent"
+          android:hint="Enter Zip Code"
+          android:padding="5dp"
+          android:textAlignment="textEnd" />
+  -->
 </RelativeLayout>
