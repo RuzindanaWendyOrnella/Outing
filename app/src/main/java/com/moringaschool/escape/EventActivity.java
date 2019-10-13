@@ -5,13 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-
 public class EventActivity extends AppCompatActivity {
     @BindView(R.id.locationNameText) EditText mlocationNameText;
     @BindView (R.id.locationTypeText)EditText mlocationTypeText;
@@ -25,7 +21,6 @@ public class EventActivity extends AppCompatActivity {
         setContentView(R.layout.activity_events);
         ButterKnife.bind(this);
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 String Name = mlocationNameText.getText().toString();

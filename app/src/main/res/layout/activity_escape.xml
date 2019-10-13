@@ -13,7 +13,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/club1" />
     <Button
-
         android:id="@+id/eventButton"
         android:layout_width="184dp"
         android:layout_height="70dp"

@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:visibility="visible"
     tools:context="com.moringaschool.escape.MainActivity">
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -14,7 +13,6 @@
         android:layout_marginTop="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/club1" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,9 +26,7 @@
         android:textColor="@color/colorAccent"
         android:textSize="50sp"
         android:textStyle="bold"/>
-
     <Button
-
         android:id="@+id/LoginButton"
         android:layout_width="184dp"
         android:layout_height="70dp"
