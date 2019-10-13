@@ -6,27 +6,25 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+
 public class EventActivity extends AppCompatActivity {
-    private EditText mlocationNameText;
-    private EditText mlocationTypeText;
-    private EditText mlocationDescriptionText;
-    private EditText mlocationDresscodeText;
-    private EditText mlocationTimeText;
-    private Button mSubmitButton;
+    @BindView(R.id.locationNameText) EditText mlocationNameText;
+    @BindView (R.id.locationTypeText)EditText mlocationTypeText;
+    @BindView (R.id.locationDescriptionText)EditText mlocationDescriptionText;
+    @BindView (R.id.locationDressCodeText)EditText mlocationDresscodeText;
+    @BindView (R.id.locationTimeText)EditText mlocationTimeText;
+    @BindView (R.id.SubmitButton)Button mSubmitButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
-        mlocationNameText = (EditText) findViewById(R.id.locationNameText);
-        mlocationTypeText=(EditText) findViewById(R.id.locationTypeText);
-        mlocationDescriptionText=(EditText) findViewById(R.id.locationDescriptionText);
-        mlocationDresscodeText=(EditText) findViewById(R.id.locationDressCodeText);
-        mlocationTimeText=(EditText) findViewById(R.id.locationTimeText);
-        mSubmitButton = (Button) findViewById(R.id.SubmitButton);
+        ButterKnife.bind(this);
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
