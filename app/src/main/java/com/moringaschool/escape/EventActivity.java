@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -42,6 +43,7 @@ public class EventActivity extends AppCompatActivity {
                 intent2.putExtra("Dresscode", Dresscode);
                 intent2.putExtra("Time", Time);
                 startActivity(intent2);
+
             }
         });
     }
