@@ -22,6 +22,12 @@
                 android:value="com.moringaschool.escape.MainActivity">
             </meta-data>
         </activity>
+        <activity android:name=".EventActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.escape.EventActivity">
+            </meta-data>
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
