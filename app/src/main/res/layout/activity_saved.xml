@@ -3,12 +3,24 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.moringaschool.escape.SavedActivity">
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/club3" />
     <TextView
         android:id="@+id/locationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result : " />
+        android:text="Result : "
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
 
     <TextView
         android:id="@+id/locationNameText"
@@ -16,20 +28,39 @@
         android:layout_height="wrap_content"
 
         android:layout_below="@id/locationTextView"
-        android:text="Name: " />
+        android:layout_marginTop="78dp"
+        android:text="Result: "
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
 
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Result: "
-           android:id="@+id/locationTypeText"
-           android:layout_below="@id/locationNameText"/>
     <TextView
+        android:id="@+id/locationTypeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/locationNameText"
+        android:layout_marginTop="91dp"
         android:text="Result: "
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
+
+
+    <TextView
         android:id="@+id/locationDescriptionText"
-        android:layout_below="@id/locationTypeText" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationTypeText"
+        android:layout_marginTop="113dp"
+        android:text="Result: "
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
 
 
     <TextView
@@ -37,12 +68,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/locationDescriptionText"
-        android:text="Result: " />
+        android:layout_marginTop="148dp"
+        android:text="Result: "
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
+
 
     <TextView
-           android:id="@+id/locationTimeText"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Result: "
-           android:layout_below="@id/locationDressCodeText"/>
+        android:id="@+id/locationTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationDressCodeText"
+        android:layout_marginTop="153dp"
+        android:text="Result: "
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
+
 </RelativeLayout>
