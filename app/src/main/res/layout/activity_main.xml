@@ -6,14 +6,14 @@
     android:visibility="visible"
     tools:context="com.moringaschool.escape.MainActivity">
 
-   <!-- <ImageView
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/club1" />-->
+        android:src="@drawable/club1" />
 
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:layout_marginTop="41dp"
         android:fontFamily="@font/allan_bold"
         android:text="Let's Go On A Spree!"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         android:textSize="50sp"
         android:textStyle="bold"/>
 
