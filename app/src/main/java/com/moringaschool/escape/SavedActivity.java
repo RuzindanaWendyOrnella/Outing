@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,10 +32,11 @@ public class SavedActivity extends AppCompatActivity {
         String Description = intent2.getStringExtra("Description");
         String Dresscode = intent2.getStringExtra("Dresscode");
         String Time = intent2.getStringExtra("Time");
-        mlocationNameText.setText(  Name);
-        mlocationTypeText.setText(  Type);
-        mlocationDescriptionText.setText(  Description);
-        mlocationDresscodeText.setText(  Dresscode);
-        mlocationTimeText.setText(  Time);
+        mlocationNameText.setText(  "NAME: " + Name);
+        mlocationTypeText.setText(  "TYPE: " + Type);
+        mlocationDescriptionText.setText(  "DESCRIPTION: " + Description);
+        mlocationDresscodeText.setText("DRESSCODE: " +  Dresscode);
+        mlocationTimeText.setText(  "TIME: " + Time);
+        Toast.makeText(SavedActivity.this, "Congratulations,your Event Has Been Saved!", Toast.LENGTH_LONG).show();
     }
 }
