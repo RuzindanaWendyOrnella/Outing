@@ -11,17 +11,18 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 
 public class EscapeActivity extends AppCompatActivity {
-    private Button mEventButton;
-    private EditText mlocationNameText;
+    @BindView(R.id.eventButton) Button mEventButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_escape);
-        mEventButton = (Button) findViewById(R.id.eventButton);
-        mlocationNameText = (EditText) findViewById(R.id.locationNameText);
+        ButterKnife.bind(this);
         mEventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
