@@ -5,19 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
 
 public class EscapeActivity extends AppCompatActivity {
-    @BindView(R.id.eventButton) Button mEventButton;
+    @BindView(R.id.eventButton)
+    Button mEventButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +23,7 @@ public class EscapeActivity extends AppCompatActivity {
         mEventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent(EscapeActivity.this,EventActivity.class);
+                Intent intent1 = new Intent(EscapeActivity.this, EventActivity.class);
                 startActivity(intent1);
             }
 
@@ -35,7 +32,3 @@ public class EscapeActivity extends AppCompatActivity {
     }
 
 }
-
-
-/*  String name = intent.getStringExtra("name");*/
-/* mLocationTextView = (TextView) findViewById(R.id.locationNameText);*/
